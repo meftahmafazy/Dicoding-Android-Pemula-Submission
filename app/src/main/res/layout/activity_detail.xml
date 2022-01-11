@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:padding="20sp"
+    android:background="@color/redValo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgReceived"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars"
+        />
+
+    <TextView
+        android:id="@+id/nameAgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/imgReceived"
+        android:layout_toRightOf="@id/imgReceived"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:text="@string/nameAgent"
+        android:textColor="@color/whiten"/>
+
+    <TextView
+        android:id="@+id/roleAgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/imgReceived"
+        android:layout_toRightOf="@id/imgReceived"
+        android:textSize="28sp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="@string/roleAgent"
+        android:textColor="@color/whiten"/>
+
+    <TextView
+        android:id="@+id/detailAgent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/imgReceived"
+        android:layout_toRightOf="@id/imgReceived"
+        android:ellipsize="none"
+        android:maxLines="100"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:justificationMode="inter_word"
+        android:scrollHorizontally="false"
+        tools:text="@string/detailAgent"
+        android:textColor="@color/whiten"/>
+
+</LinearLayout>

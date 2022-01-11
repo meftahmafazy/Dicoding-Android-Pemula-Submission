@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    app:showAsAction="always"
+    android:icon="@drawable/ic_more"
+    android:title=""
+    >
+    <menu>
+        <item
+            android:id="@+id/listActivity"
+            android:title="List Agent"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_list"
+            
+            />
+        <item
+            android:id="@+id/aboutActivity"
+            android:title="About Me"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_info"
+            />
+    </menu>
+</item>
+
+</menu>

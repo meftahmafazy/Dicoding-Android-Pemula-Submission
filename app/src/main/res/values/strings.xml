@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Valorant Agent</string>
+    <string name="nameAgent">nameAgent</string>
+    <string name="roleAgent">roleAgent</string>
+    <string name="detailAgent">detailAgent</string>
+    <string name="email">meftah.mafazy@gmail.com</string>
+    <string name="name">Muhammad Meftah Mafazy</string>
+    <string name="about">About</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agent_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/redValo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAgent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:id="@+id/nameAgent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/imgAgent"
+            android:layout_toRightOf="@id/imgAgent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/nameAgent"
+            android:textColor="@color/whiten"/>
+
+        <TextView
+            android:id="@+id/roleAgent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/imgAgent"
+            android:layout_toRightOf="@id/imgAgent"
+            android:textSize="18sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/roleAgent"
+            android:textColor="@color/whiten"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

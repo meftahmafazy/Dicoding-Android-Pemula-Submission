@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@color/redValo">
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/whiten"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pasfoto"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="120dp"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pasfoto" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textColor="@color/whiten"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="460dp"
+        android:text="@string/email"
+        android:textColor="@color/whiten"
+        android:textSize="20sp" />
+
+</RelativeLayout>
